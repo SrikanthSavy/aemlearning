@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/firstaem" mode="merge"/>
+    <filter root="/content/firstaem" mode="merge"/>
+    <filter root="/content/dam/firstaem/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/firstaem" mode="merge"/>
+</workspaceFilter>

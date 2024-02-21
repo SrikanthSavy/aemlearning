@@ -1,0 +1,22 @@
+<div class="cmp_articlelist1">
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='articlelist_firstaem'}"></sly>
+
+<h1 class="cmp_articlelist1__heading"> Welcome to articleListUpdated</h1>
+
+<div data-sly-use.model="com.adobe.aem.firstaem.core.models.ArticleListTest" class="cmp_articlelist1__cards-container">
+
+    <sly data-sly-list.articleList="${model.articleListBeans}">
+        <div class="cmp_articlelist1__card">
+            <h3 class="cmp_articlelist1__card-title"> ${articleList.title} </h3>
+            <div class="cmp_articlelist1__card-description"> ${articleList.description} </div>
+            <div class="cmp_articlelist1__card-btn-container"> 
+                    <a class="cmp_articlelist1__card-btn" href="${articleList.path}"> Explore </a> 
+            </div>
+        </div>
+    </sly>
+</div>
+
+</div>
+
